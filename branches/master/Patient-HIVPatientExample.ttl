@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/xhanti-fhir/Patient/HIVPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/xhanti-fhir/StructureDefinition/hiv-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/xhanti-fhir/StructureDefinition/hiv-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Ndulo Lolo Ma </b> female, DoB: 2004-12-12</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: \">D</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"tel:+27723452375\">+27723452375</a></li><li><a href=\"mailto:ndulo@gmail.com\">ndulo@gmail.com</a></li><li>323 Main Road Friday Complex Makhanda Eastern Cape South Africa </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: N\">N:</td><td colspan=\"3\"><ul><li>Siyo Kimi Puti </li><li><a href=\"tel:+27720001122\">+27720001122</a></li><li><a href=\"mailto:siyo@gmail.com\">siyo@gmail.com</a></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Ma" ] ;
+     fhir:given ( [ fhir:v "Ndulo" ] [ fhir:v "Lolo" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+27723452375" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "ndulo@gmail.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2004-12-12"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "323 Main Road" ] [ fhir:v "Friday Complex" ] ) ;
+     fhir:city [ fhir:v "Makhanda" ] ;
+     fhir:district [ fhir:v "Makana Municipality" ] ;
+     fhir:state [ fhir:v "Eastern Cape" ] ;
+     fhir:country [ fhir:v "South Africa" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:code [ fhir:v "D" ]
+     ] )
+  ] ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         fhir:code [ fhir:v "N" ]
+       ] )
+     ] ) ;
+     fhir:name [
+       fhir:family [ fhir:v "Puti" ] ;
+       fhir:given ( [ fhir:v "Siyo" ] [ fhir:v "Kimi" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+27720001122" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "siyo@gmail.com" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

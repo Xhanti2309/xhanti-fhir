@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="HIVPatientExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/xhanti-fhir/StructureDefinition/hiv-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Ndulo Lolo Ma </b> female, DoB: 2004-12-12</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes: ">D</span></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="tel:+27723452375">+27723452375</a></li><li><a href="mailto:ndulo@gmail.com">ndulo@gmail.com</a></li><li>323 Main Road Friday Complex Makhanda Eastern Cape South Africa </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: N">N:</td><td colspan="3"><ul><li>Siyo Kimi Puti </li><li><a href="tel:+27720001122">+27720001122</a></li><li><a href="mailto:siyo@gmail.com">siyo@gmail.com</a></li></ul></td></tr></table></div>
+  </text>
+  <name>
+    <family value="Ma"/>
+    <given value="Ndulo"/>
+    <given value="Lolo"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+27723452375"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="ndulo@gmail.com"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="2004-12-12"/>
+  <address>
+    <line value="323 Main Road"/>
+    <line value="Friday Complex"/>
+    <city value="Makhanda"/>
+    <district value="Makana Municipality"/>
+    <state value="Eastern Cape"/>
+    <country value="South Africa"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <code value="D"/>
+    </coding>
+  </maritalStatus>
+  <contact>
+    <relationship>
+      <coding>
+        <code value="N"/>
+      </coding>
+    </relationship>
+    <name>
+      <family value="Puti"/>
+      <given value="Siyo"/>
+      <given value="Kimi"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+27720001122"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="siyo@gmail.com"/>
+    </telecom>
+  </contact>
+</Patient>

@@ -1,0 +1,11 @@
+﻿/github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.xhanti-fhir.json: line 1, col 1085, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 41, col 8, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/Patient-HIVPatientExample.json: line 31, col 14, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json: line 1, col 34222, Info - Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0 (BUSINESSRULE)
+
+TestFHIRIG : Validation Results
+=========================================
+
+err = 0, warn = 5, info = 2
+IG Publisher Version: 1.5.5
+Generated Mon Dec 04 08:35:29 UTC 2023. FHIR version 5.0.0 for openhie.fhir.xhanti-fhir#1.0.0 (canonical = http://openhie.org/fhir/xhanti-fhir)

@@ -1,0 +1,22 @@
+﻿TestFHIRIG : Validation Results
+=========================================
+
+err = 0, warn = 5, info = 2
+IG Publisher Version: 1.5.5
+Generated Mon Dec 04 08:35:29 UTC 2023. FHIR version 5.0.0 for openhie.fhir.xhanti-fhir#1.0.0 (canonical = http://openhie.org/fhir/xhanti-fhir)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.xhanti-fhir : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.xhanti-fhir.json ==
+INFORMATION: ImplementationGuide/openhie.fhir.xhanti-fhir: ImplementationGuide.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Patient-HIVPatientExample.json ==
+WARNING: Patient/HIVPatientExample: Patient.maritalStatus.coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Patient/HIVPatientExample: Patient.contact[0].relationship[0].coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+INFORMATION: StructureDefinition/hiv-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

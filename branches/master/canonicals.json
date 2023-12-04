@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "openhie.fhir.xhanti-fhir",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/xhanti-fhir/ImplementationGuide/openhie.fhir.xhanti-fhir",
+    "version" : "1.0.0",
+    "name" : "TestFHIRIG"
+  },
+  {
+    "id" : "hiv-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/xhanti-fhir/StructureDefinition/hiv-patient",
+    "version" : "1.0.0",
+    "name" : "HIVPatient"
+  }
+]
